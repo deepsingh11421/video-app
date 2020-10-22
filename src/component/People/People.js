@@ -1,26 +1,18 @@
 import React from 'react'
 import classes from './People.module.css';
-
+import Person from './Person/Person';
 export default function People(props) {
-    return (
+  var list = props.persons;
+  //console.log(list);  
+  var personList = list.map((listKey) => {
+    console.log(listKey);
+    return <Person avatar={listKey[1]} person={listKey[0]}/>;
+  });  
+
+  return (
       <div className={classes.People}>
         <div className={classes.log}>
-          <div className={classes.img}>
-            <img src={props.photo} alt="person"></img>
-            <div>{props.name}</div>
-          </div>
-          <div className={classes.img}>
-            <img src={props.photo} alt="person"></img>
-            <div>{props.name}</div>
-          </div>
-          <div className={classes.img}>
-            <img src={props.photo} alt="person"></img>
-            <div>{props.name}</div>
-          </div>
-          <div className={classes.img}>
-            <img src={props.photo} alt="person"></img>
-            <div>{props.name}</div>
-          </div>
+          {personList}
         </div>
       </div>
     );

@@ -4,6 +4,7 @@ import {Route,withRouter,Switch} from 'react-router-dom';
 import VideoFrame from './component/videoFrame/videoFrame';
 import classes from './App.module.css';
 import Navigation from './component/navigation/navigation';
+import People from './component/People/People';
 //New Push
 class App extends Component {
   render() {
@@ -18,7 +19,30 @@ class App extends Component {
           ["family", 1],
           ["nazi", 1],
           ["last", 1]
-      ];
+    ];
+    
+    var person = [
+      [
+        "Person1",
+        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+      ],
+      [
+        "Person2",
+        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+      ],
+      [
+        "Person3",
+        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+      ],
+      [
+        "Person4",
+        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+      ],
+      [
+        "Person5",
+        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+      ]
+    ];
 
     return (
       <div className={classes.app}>
@@ -30,8 +54,13 @@ class App extends Component {
         />
         <Navigation />
         <Switch>
-          <Route path="/" exact component={() => <Summary keywordCloud={keywordCloud}/>} /> 
+          <Route
+            path="/"
+            exact
+            component={() => <Summary keywordCloud={keywordCloud} />}
+          />
         </Switch>
+        <People persons={person} />
       </div>
     );
   }
