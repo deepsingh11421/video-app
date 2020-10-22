@@ -1,0 +1,11 @@
+.heading {
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4d1749;
+    width: 200px;
+    text-align: center;
+    color: gold;
+    font-size: bold;
+    margin: auto;
+}
