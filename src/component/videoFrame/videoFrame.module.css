@@ -1,9 +1,40 @@
+.videoContainer {
+    width: 100%;
+}
+
 .videoFrame {
-    font-weight: bold;
-    width: 80%;
-    font-size: 1.5rem;
-    background-color: orange;
-    margin: auto;
-    height: 250px;
-    text-align: center;
+    width: 100%;
+}
+
+.videoDetails {
+    margin: 10px;
+    font-size: 1.3rem;
+}
+
+.videoDescription {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.safe {
+    color: white;
+    width: 150px;
+    font-size: 1.2rem;
+    height: 50px;
+    background-color: green;
+    border: 1px solid green;
+}
+
+.danger {
+    color: white;
+    width: 150px;
+    font-size: 1.2rem;
+    height: 50px;
+    background-color: red;
+    border: 1px solid red;
+}
+
+hr {
+    background-color: rgb(228, 142, 228);
 }
