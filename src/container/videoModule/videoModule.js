@@ -1,6 +1,5 @@
 import React , {Component} from 'react';
 import classes from './videoModule.module.css';
-import VideoFrame from '../../component/videoFrame/videoFrame';
 import TableOfContent from '../../component/tableOfContent/tableOfContent';
 import Positive from '../../component/positive/positive';
 import Negative from '../../component/negative/negative';
@@ -52,7 +51,7 @@ class videoModule extends Component {
                         Code Copied!
                     </div>
                 </div>
-                <VideoFrame video_name={this.props.video_name} video_upload_time={this.props.video_upload_time} safe={this.props.safe}/>
+                
                 <div className={classes.function}>
                     <TableOfContent alertTrigger={this.alertTrigger}/>
                     <Positive alertTrigger={this.alertTrigger}/>
