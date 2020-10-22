@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './People.module.css';
+
 export default function People(props) {
     return (
       <div className={classes.People}>
