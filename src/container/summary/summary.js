@@ -5,6 +5,7 @@ import KeywordCloud from '../../component/keywordCloud/keywordCloud';
 import People from '../../component/People/People';
 import Heading from '../../UI/Heading/Heading';
 import Transcript from '../transcript/transcript';
+import Analytics from '../../component/Analytics/Analytics';
 
 class Summary extends Component {
     render(){
@@ -14,7 +15,8 @@ class Summary extends Component {
             <div className={classes.people}>
               <Heading>People</Heading>
               <People persons={this.props.persons} />
-            </div>
+                </div>
+                <Analytics />
             <KeywordCloud keywordCloud={this.props.keywordCloud} />
             <Transcript transcript={this.props.transcript}/>
           </div>

@@ -5,6 +5,7 @@ import VideoFrame from './component/videoFrame/videoFrame';
 import classes from './App.module.css';
 import Navigation from './component/navigation/navigation';
 class App extends Component {
+  
   render() {
     var keywordCloud = [
           ["germany", 1],
