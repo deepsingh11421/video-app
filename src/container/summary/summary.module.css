@@ -1,3 +1,6 @@
-.summary {
-    height: 200vh;
+.people {
+    margin: 50px 10%;
+    padding: 20px;
+    border: 1px solid purple;
+    border-radius: 50px;
 }

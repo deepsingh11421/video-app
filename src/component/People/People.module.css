@@ -1,20 +1,7 @@
 .People{
-    z-index: 100000;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: 1px solid black;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    overflow-x: scroll;
-    overflow-y: scroll;
 }
 .log{
-    margin-left: 10px;
-    margin-right: 10px;
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;

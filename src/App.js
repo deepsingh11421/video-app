@@ -57,10 +57,10 @@ class App extends Component {
           <Route
             path="/"
             exact
-            component={() => <Summary keywordCloud={keywordCloud} />}
+            component={() => <Summary keywordCloud={keywordCloud} persons={person}/>}
           />
         </Switch>
-        <People persons={person} />
+        
       </div>
     );
   }
