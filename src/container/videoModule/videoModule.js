@@ -13,10 +13,6 @@ class videoModule extends Component {
         alertID: null
     }
 
-    // ClearAllIntervals = () => {
-    //     for (var i = 1; i < 99999; i++)
-    //         window.clearInterval(i);
-    // }
     ClearAllIntervals = () => {
         if(this.state.alertID !== null){
             clearInterval(this.state.alertID);
@@ -30,15 +26,6 @@ class videoModule extends Component {
         }
         this.setState({alertID: null});
     }
-
-    // alertTrigger = () => {
-    //     this.ClearAllIntervals();
-    //     var curr = this.state.copyAlert;
-    //     if(!this.state.copyAlert){
-    //         this.setState({copyAlert: !curr});
-    //     }
-    //     var timeID = setTimeout(this.checkAlert,3000);
-    // }
 
     alertTrigger = () => {
         this.ClearAllIntervals();
@@ -65,7 +52,7 @@ class videoModule extends Component {
                         Code Copied!
                     </div>
                 </div>
-                <VideoFrame />
+                <VideoFrame video_name={this.props.video_name} video_upload_time={this.props.video_upload_time} safe={this.props.safe}/>
                 <div className={classes.function}>
                     <TableOfContent alertTrigger={this.alertTrigger}/>
                     <Positive alertTrigger={this.alertTrigger}/>

@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <VideoModule />
+        <VideoModule video_name="video_name" video_upload_time="video_upload_time" safe="true"/>
       </div>
     );
   }
