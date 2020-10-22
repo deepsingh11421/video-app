@@ -11,7 +11,10 @@ class App extends Component {
           video_upload_time="video_upload_time"
           safe="true"
         />
-        <People />
+        <People
+          name="Jatin"
+          photo="https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg"
+        />
       </div>
     );
   }
