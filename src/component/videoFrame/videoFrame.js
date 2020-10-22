@@ -9,7 +9,7 @@ function videoFrame (props) {
     return (
         <div className={classes.videoContainer}>
             <video controls className={classes.videoFrame}>
-                <source src="https://thinkific-import.s3.amazonaws.com/244040/0lwDEoNOQ6qYA41x3TK6_output8.m4v" type="video/mp4" />
+                <source src={props.video_url} type="video/mp4" />
                 Your browser does not support HTML video.    
             </video>
             <div className={classes.videoDescription}>
