@@ -1,6 +1,19 @@
 .people {
-    margin: 50px 10%;
+    margin: 20px 10% 50px 10%;
     padding: 20px;
     border: 1px solid purple;
     border-radius: 50px;
+}
+
+@media (max-width: 460px){
+    .people {
+        margin: 50px 2%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 335px){
+    .people {
+        padding: 10px;
+    }
 }

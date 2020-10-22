@@ -5,3 +5,9 @@
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
 }
+
+@media (max-width: 563px){
+    .keywordCloud {
+        width: 100%;
+    }
+}
