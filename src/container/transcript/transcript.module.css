@@ -1,0 +1,27 @@
+.transcript {
+    margin: 20px 0px;
+}
+
+.transcript input{
+    /* text-align: ; */
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-size: 1.2rem;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.text {
+    color: blue;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text span {
+    background-color: yellow;
+}

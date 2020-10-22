@@ -37,7 +37,6 @@ class videoModule extends Component {
     }
 
     render() {
-        console.log(this.state.copyAlert);
         var alert = [classes.alert];
         if(this.state.copyAlert){
             alert.push(classes.show);

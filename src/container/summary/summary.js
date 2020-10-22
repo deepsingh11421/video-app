@@ -4,6 +4,7 @@ import VideoModule from '../videoModule/videoModule';
 import KeywordCloud from '../../component/keywordCloud/keywordCloud';
 import People from '../../component/People/People';
 import Heading from '../../UI/Heading/Heading';
+import Transcript from '../transcript/transcript';
 
 class Summary extends Component {
     render(){
@@ -15,6 +16,7 @@ class Summary extends Component {
               <People persons={this.props.persons} />
             </div>
             <KeywordCloud keywordCloud={this.props.keywordCloud} />
+            <Transcript transcript={this.props.transcript}/>
           </div>
         );
     }
