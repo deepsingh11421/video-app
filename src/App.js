@@ -4,7 +4,7 @@ import {Route,withRouter,Switch} from 'react-router-dom';
 import VideoFrame from './component/videoFrame/videoFrame';
 import classes from './App.module.css';
 import Navigation from './component/navigation/navigation';
-import People from './component/People/People';
+
 
 class App extends Component {
   render() {
@@ -20,9 +20,6 @@ class App extends Component {
         <Switch>
           <Route path="/" exact component={Summary} />
         </Switch>
-        <People
-          name="jatin"
-          photo="https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg" />
       </div>
     );
   }
