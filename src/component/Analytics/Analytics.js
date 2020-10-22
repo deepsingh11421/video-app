@@ -1,8 +1,7 @@
 //props main data 
-
-
 import React from 'react'
 import classes from './Analytics.module.css'
+import "font-awesome/css/font-awesome.min.css";
 
 export default function Analytics(props) {
     return (
@@ -19,25 +18,49 @@ export default function Analytics(props) {
             <div>Posture</div>
             <div>55% Casual pose & 0% fprmal Pose</div>
             <div>55% Casual pose & 0% fprmal Pose</div>
-            <div>icon</div>
+            <div>
+              <i
+                style={{ color: "lightgreen" }}
+                class="fa fa-thumbs-up"
+                aria-hidden="true"
+              ></i>
+            </div>
           </div>
           <div className={classes.content}>
             <div>Posture</div>
             <div>55% Casual pose & 0% fprmal Pose</div>
             <div>55% Casual pose & 0% fprmal Pose</div>
-            <div>icon</div>
+            <div>
+              <i
+                style={{ color: "red" }}
+                class="fa fa-thumbs-down"
+                aria-hidden="true"
+              ></i>
+            </div>
           </div>
           <div className={classes.content}>
             <div>Posture</div>
             <div>55% Casual pose & 0% fprmal Pose</div>
             <div>55% Casual pose & 0% fprmal Pose</div>
-            <div>icon</div>
+            <div>
+              <i
+                style={{ color: "lightgreen" }}
+                class="fa fa-thumbs-up"
+                aria-hidden="true"
+              ></i>
+            </div>
           </div>
           <div className={classes.content}>
             <div>Posture</div>
             <div>55% Casual pose & 0% fprmal Pose</div>
             <div>55% Casual pose & 0% fprmal Pose</div>
-            <div>icon</div>
+            <div>
+              <i
+                style={{ color: "red" }}
+                class="fa fa-thumbs-down"
+                aria-hidden="true"
+              ></i>
+            </div>
           </div>
         </div>
         <div className={classes.subhead}>Facial Expression</div>
@@ -47,25 +70,49 @@ export default function Analytics(props) {
               <div>Posture</div>
               <div>55% Casual pose & 0% fprmal Pose</div>
               <div>55% Casual pose & 0% fprmal Pose</div>
-              <div>icon</div>
+              <div>
+                <i
+                  style={{ color: "lightgreen" }}
+                  class="fa fa-thumbs-up"
+                  aria-hidden="true"
+                ></i>
+              </div>
             </div>
             <div className={classes.content}>
               <div>Posture</div>
               <div>55% Casual pose & 0% fprmal Pose</div>
               <div>55% Casual pose & 0% fprmal Pose</div>
-              <div>icon</div>
+              <div>
+                <i
+                  style={{ color: "red" }}
+                  class="fa fa-thumbs-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
             </div>
             <div className={classes.content}>
               <div>Posture</div>
               <div>55% Casual pose & 0% fprmal Pose</div>
               <div>55% Casual pose & 0% fprmal Pose</div>
-              <div>icon</div>
+              <div>
+                <i
+                  style={{ color: "lightgreen" }}
+                  class="fa fa-thumbs-up"
+                  aria-hidden="true"
+                ></i>
+              </div>
             </div>
             <div className={classes.content}>
               <div>Posture</div>
               <div>55% Casual pose & 0% fprmal Pose</div>
               <div>55% Casual pose & 0% fprmal Pose</div>
-              <div>icon</div>
+              <div>
+                <i
+                  style={{ color: "red" }}
+                  class="fa fa-thumbs-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
             </div>
           </div>
         </div>
