@@ -1,0 +1,10 @@
+.People{
+    margin-top: 50px;
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
