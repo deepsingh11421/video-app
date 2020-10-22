@@ -12,7 +12,7 @@ const People = (props) => {
 
   return (
       <div className={classes.People}>
-        {/* <Heading>People</Heading> */}
+        { /*<Heading>People</Heading>*/ }
         <div className={classes.log}>
           {personList}
         </div>

@@ -4,7 +4,6 @@ import {Route,withRouter,Switch} from 'react-router-dom';
 import VideoFrame from './component/videoFrame/videoFrame';
 import classes from './App.module.css';
 import Navigation from './component/navigation/navigation';
-import People from './component/People/People';
 //New Push
 class App extends Component {
   render() {
@@ -41,7 +40,11 @@ class App extends Component {
       [
         "Person5",
         "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
-      ]
+      ],
+      [
+        "Person5",
+        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+      ],
     ];
 
     return (
@@ -60,7 +63,6 @@ class App extends Component {
             component={() => <Summary keywordCloud={keywordCloud} persons={person}/>}
           />
         </Switch>
-        
       </div>
     );
   }
