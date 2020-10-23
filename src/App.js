@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Summary from './container/summary/summary';
+import Detailed from './container/detailed/detailed';
 import {Route,withRouter,Switch} from 'react-router-dom';
 import VideoFrame from './component/videoFrame/videoFrame';
 import classes from './App.module.css';
@@ -52,13 +53,17 @@ class App extends Component {
     return (
       <div className={classes.app}>
         <VideoFrame
-          video_url="https://thinkific-impor.s3.amazonaws.com/244040/0lwDEoNOQ6qYA41x3TK6_output8.m4v"
+          video_url="https://thinkific-import.s3.amazonaws.com/244040/0lwDEoNOQ6qYA41x3TK6_output8.m4v"
           video_name="video_name"
           video_upload_time="video_upload_time"
           safe="true"
         />
         <Navigation />
         <Switch>
+          <Route 
+            path="/detailed"
+            component={() => <Detailed persons={person}/>}
+          />
           <Route
             path="/"
             exact
