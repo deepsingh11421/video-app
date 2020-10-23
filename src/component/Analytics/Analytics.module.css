@@ -36,3 +36,10 @@
 .details > div:nth-of-type(even) {
     background: #e7e7e7;
 }
+
+
+@media(max-width:770px){
+    .content > div{
+        padding: 10px;
+    }
+}
