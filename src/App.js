@@ -24,27 +24,27 @@ class App extends Component {
     var person = [
       [
         "Person1",
-        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
       ],
       [
         "Person2",
-        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
       ],
       [
         "Person3",
-        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
       ],
       [
         "Person4",
-        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
       ],
       [
         "Person5",
-        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
       ],
       [
         "Person5",
-        "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
       ],
     ];
 
