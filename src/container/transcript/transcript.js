@@ -47,7 +47,7 @@ class Transcript extends Component {
             <div className={classes.transcript}>
                 <Heading>Transcript</Heading>
                 <div className={classes.search}>
-                    <input type='text' placeholder="Search the transcript..." onChange={this.inputHandler} value={this.state.search}/>
+                    <input type='text' placeholder="Search this transcript..." onChange={this.inputHandler} value={this.state.search}/>
                 </div>
                 {result}
             </div>

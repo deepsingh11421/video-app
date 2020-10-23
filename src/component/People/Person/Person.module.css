@@ -8,3 +8,7 @@
     width: 90px;
     height: 90px;
 }
+
+.img:hover {
+    cursor: pointer;
+}

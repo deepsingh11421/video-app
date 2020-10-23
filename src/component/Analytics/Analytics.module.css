@@ -1,0 +1,38 @@
+.Analytics{
+    margin-bottom: 50px;
+    border:1px solid rgb(231, 231, 231);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.head{
+    padding: 10px;
+    background-color: rgb(105, 0, 105);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subhead{
+    height: 30px;
+    font-size:20px;
+    background-color: yellow;
+}
+
+.details{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details > div:nth-of-type(even) {
+    background: #e7e7e7;
+}
