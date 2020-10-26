@@ -5,6 +5,8 @@ import {Route,withRouter,Switch} from 'react-router-dom';
 import VideoFrame from './component/videoFrame/videoFrame';
 import classes from './App.module.css';
 import Navigation from './component/navigation/navigation';
+
+
 class App extends Component {
   
   render() {
@@ -70,6 +72,7 @@ class App extends Component {
             component={() => <Summary keywordCloud={keywordCloud} persons={person} transcript={transcript}/>}
           />
         </Switch>
+       
       </div>
     );
   }
