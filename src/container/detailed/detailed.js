@@ -32,11 +32,13 @@ class Detailed extends Component {
             ["Joker", 1],
           ];
 
+        var emotion = "happy";
+
         return(
             <div className={classes.detailed}>
                 <People persons={this.props.persons}/>
                 <Analytics />
-                <WordPower frequentWords={frequentWords} positiveWords={positiveWords}/>
+                <WordPower frequentWords={frequentWords} positiveWords={positiveWords} emotion={emotion}/>
             </div>
         );
     }

@@ -55,7 +55,7 @@ const WordPower = (props) => {
                   <p>Positive word</p>
                   {positiveList}</div>
               <div className={classes.voiceEmotion}>
-                <VoiceEmotion emotion="happy"/>
+                <VoiceEmotion emotion={props.emotion}/>
               </div>
               <div className={classes.wpm}>
                 Words Per Minute
