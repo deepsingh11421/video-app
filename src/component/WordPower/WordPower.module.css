@@ -1,0 +1,19 @@
+.WordPower {
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.List{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 563px){
+    .WordPower {
+        width: 100%;
+    }
+}

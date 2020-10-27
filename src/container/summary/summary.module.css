@@ -5,6 +5,12 @@
     border-radius: 50px;
 }
 
+
+.cloudgraph{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 460px){
     .people {
         margin: 50px 2%;
