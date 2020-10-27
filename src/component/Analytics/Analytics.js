@@ -2,10 +2,12 @@
 import React from 'react'
 import classes from './Analytics.module.css'
 import "font-awesome/css/font-awesome.min.css";
+import Heading from '../../UI/Heading/Heading'; 
 
 export default function Analytics(props) {
         return (
           <div className={classes.Analytics}>
+            <Heading>Analytics</Heading><br/>
             <div className={classes.head}>
               <div>Features</div>
               <div>Your assessment</div>
@@ -21,7 +23,7 @@ export default function Analytics(props) {
                 <div>
                   <i
                     style={{ color: "lightgreen" }}
-                    class="fa fa-thumbs-up"
+                    className="fa fa-thumbs-up"
                     aria-hidden="true"
                   ></i>
                 </div>
@@ -33,7 +35,7 @@ export default function Analytics(props) {
                 <div>
                   <i
                     style={{ color: "red" }}
-                    class="fa fa-thumbs-down"
+                    className="fa fa-thumbs-down"
                     aria-hidden="true"
                   ></i>
                 </div>
@@ -45,7 +47,7 @@ export default function Analytics(props) {
                 <div>
                   <i
                     style={{ color: "lightgreen" }}
-                    class="fa fa-thumbs-up"
+                    className="fa fa-thumbs-up"
                     aria-hidden="true"
                   ></i>
                 </div>
@@ -57,7 +59,7 @@ export default function Analytics(props) {
                 <div>
                   <i
                     style={{ color: "red" }}
-                    class="fa fa-thumbs-down"
+                    className="fa fa-thumbs-down"
                     aria-hidden="true"
                   ></i>
                 </div>
@@ -73,7 +75,7 @@ export default function Analytics(props) {
                   <div>
                     <i
                       style={{ color: "lightgreen" }}
-                      class="fa fa-thumbs-up"
+                      className="fa fa-thumbs-up"
                       aria-hidden="true"
                     ></i>
                   </div>
@@ -85,7 +87,7 @@ export default function Analytics(props) {
                   <div>
                     <i
                       style={{ color: "red" }}
-                      class="fa fa-thumbs-down"
+                      className="fa fa-thumbs-down"
                       aria-hidden="true"
                     ></i>
                   </div>
@@ -97,7 +99,7 @@ export default function Analytics(props) {
                   <div>
                     <i
                       style={{ color: "lightgreen" }}
-                      class="fa fa-thumbs-up"
+                      className="fa fa-thumbs-up"
                       aria-hidden="true"
                     ></i>
                   </div>
@@ -109,7 +111,7 @@ export default function Analytics(props) {
                   <div>
                     <i
                       style={{ color: "red" }}
-                      class="fa fa-thumbs-down"
+                      className="fa fa-thumbs-down"
                       aria-hidden="true"
                     ></i>
                   </div>

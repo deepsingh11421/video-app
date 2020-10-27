@@ -45,7 +45,7 @@ class App extends Component {
         "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
       ],
       [
-        "Person5",
+        "Person6",
         "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
       ],
     ];
