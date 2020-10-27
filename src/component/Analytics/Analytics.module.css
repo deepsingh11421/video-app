@@ -4,6 +4,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
     padding: 20px;
 }
 
@@ -13,12 +14,14 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    font-weight: 600;
 }
 
 .subhead{
     height: 30px;
     font-size:20px;
     background-color: yellow;
+    font-weight: 600;
 }
 
 .details{

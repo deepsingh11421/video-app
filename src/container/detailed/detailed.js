@@ -6,7 +6,7 @@ import WordPower from '../../component/WordPower/WordPower'
 
 class Detailed extends Component {
     render() {
-        var word = [
+        var frequentWords = [
           ["germany", 1],
           ["states", 1],
           ["said", 1],
@@ -19,11 +19,26 @@ class Detailed extends Component {
           ["last", 1],
         ];
 
+        var positiveWords = [
+            ["Apple", 1],
+            ["Ball", 1],
+            ["Cat", 1],
+            ["Dog", 1],
+            ["Elephant", 1],
+            ["Fire", 1],
+            ["Goal", 1],
+            ["Hole", 1],
+            ["Iran", 1],
+            ["Joker", 1],
+          ];
+
+        var emotion = "happy";
+
         return(
             <div className={classes.detailed}>
                 <People persons={this.props.persons}/>
                 <Analytics />
-                <WordPower word={word}/>
+                <WordPower frequentWords={frequentWords} positiveWords={positiveWords} emotion={emotion}/>
             </div>
         );
     }
