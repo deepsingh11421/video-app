@@ -30,10 +30,10 @@ const WordPower = (props) => {
       <Heading>Word Power</Heading>
       <div className={classes.List}>
               <div style={{ width: "40%" }}>
-                  <p>Frequently Used Words</p>
+                  <h3>Frequently Used Words</h3>
                   {updatedlist}</div>
               <div style={{ width: "40%" }}>
-                  <p>Positive word</p>
+                  <h3>Positive word</h3>
                   {updatedlist}</div>
       </div>
     </div>
