@@ -7,7 +7,7 @@ const keywordCloud = (props) => {
     var sizes = [["20px","#45b6fe"],["25px","#3792cb"],["30px","#296d98"],["35px","#1c4966"],["40px","#0e2433"]];
     var updatedlist = list.map(listKey => {
         var randomValue = sizes[Math.floor(Math.random()*5)];
-        // console.log(randomValue);
+        
         return <span key={listKey[0]} style={{fontSize: `${randomValue[0]}`,color: `${randomValue[1]}`}}> {listKey[0]} </span>;
     })
 

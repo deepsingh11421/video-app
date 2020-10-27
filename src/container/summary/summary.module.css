@@ -9,6 +9,13 @@
 .cloudgraph{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (min-width: 1011px){
+    .cloudgraph div{
+        width: 40%;
+    }
 }
 
 @media (max-width: 460px){

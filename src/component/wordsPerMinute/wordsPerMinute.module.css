@@ -1,0 +1,48 @@
+.wpm {
+    margin: 20px 0px;
+}
+
+.graph {
+    margin-top: 20px;
+    position: relative;
+}
+
+.graph img {
+    width: 90%;
+}
+
+.arrow {
+    width: 30%;
+    height: 3px;
+    position: absolute;
+    bottom: 7%;
+    background-color: rgb(85, 0, 85);
+    transform-origin: right;
+    left: 20%;
+    opacity: 0.7;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    bottom: 7%;
+    left: 49%;
+    border-radius: 50%;
+    background-color: rgb(85, 0, 85);
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 92%;
+}
+
+.words {
+    width: 50px;
+    border-radius: 5px;
+    position: relative;
+    left: -50%;
+    border: 1px solid rgb(85, 0, 85);
+    justify-content: center;
+}

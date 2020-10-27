@@ -52,7 +52,7 @@ export default function LineGraph() {
   return (
       <div className={classes.LineGraph}>
         <Heading>Sentiment Over Time</Heading>
-        <Line data={data} options={options} />
+        <Line data={data} options={options}/>
     </div>
   );
 }

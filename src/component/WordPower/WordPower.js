@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./WordPower.module.css";
 import Heading from "../../UI/Heading/Heading";
 import VoiceEmotion from '../voiceEmotion/voiceEmotion';
+import WordsPerMinute from '../wordsPerMinute/wordsPerMinute';
 
 const WordPower = (props) => {
   var frequentWords = props.frequentWords;
@@ -54,11 +55,11 @@ const WordPower = (props) => {
               <div className={classes.positive}>
                   <p>Positive word</p>
                   {positiveList}</div>
+              <div className={classes.wpm}>
+                <WordsPerMinute words="180"/>
+              </div>
               <div className={classes.voiceEmotion}>
                 <VoiceEmotion emotion={props.emotion}/>
-              </div>
-              <div className={classes.wpm}>
-                Words Per Minute
               </div>
       </div>
     </div>

@@ -4,7 +4,6 @@ import graph from '../../assets/image/voiceEmotion.png';
 
 const voiceEmotion = (props) => {
     var degree;
-    console.log(props.emotion)
     switch(props.emotion){
         case "angry": degree = 20;console.log(props.emotion);break;
         case "sad": degree = 65;break;

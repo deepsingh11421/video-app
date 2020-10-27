@@ -63,11 +63,11 @@ class App extends Component {
         <Navigation />
         <Switch>
           <Route 
-            path="/detailed"
+            path="/video-app/detailed"
             component={() => <Detailed persons={person}/>}
           />
           <Route
-            path="/"
+            path="/video-app"
             exact
             component={() => <Summary keywordCloud={keywordCloud} persons={person} transcript={transcript}/>}
           />
