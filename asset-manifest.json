@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/video-app/static/css/main.aba0775a.chunk.css",
-    "main.js": "/video-app/static/js/main.2a74b97a.chunk.js",
-    "main.js.map": "/video-app/static/js/main.2a74b97a.chunk.js.map",
+    "main.css": "/video-app/static/css/main.85ce7a0d.chunk.css",
+    "main.js": "/video-app/static/js/main.d1f6c0d1.chunk.js",
+    "main.js.map": "/video-app/static/js/main.d1f6c0d1.chunk.js.map",
     "runtime-main.js": "/video-app/static/js/runtime-main.66cf5e2a.js",
     "runtime-main.js.map": "/video-app/static/js/runtime-main.66cf5e2a.js.map",
     "static/css/2.ab06fbdc.chunk.css": "/video-app/static/css/2.ab06fbdc.chunk.css",
-    "static/js/2.50b638de.chunk.js": "/video-app/static/js/2.50b638de.chunk.js",
-    "static/js/2.50b638de.chunk.js.map": "/video-app/static/js/2.50b638de.chunk.js.map",
+    "static/js/2.afdf2910.chunk.js": "/video-app/static/js/2.afdf2910.chunk.js",
+    "static/js/2.afdf2910.chunk.js.map": "/video-app/static/js/2.afdf2910.chunk.js.map",
     "index.html": "/video-app/index.html",
-    "precache-manifest.23d32643c38dd9ff1498a2e1eb97bdb8.js": "/video-app/precache-manifest.23d32643c38dd9ff1498a2e1eb97bdb8.js",
+    "precache-manifest.de9d9292e3514b33ca1da70b4d90f3dd.js": "/video-app/precache-manifest.de9d9292e3514b33ca1da70b4d90f3dd.js",
     "service-worker.js": "/video-app/service-worker.js",
     "static/css/2.ab06fbdc.chunk.css.map": "/video-app/static/css/2.ab06fbdc.chunk.css.map",
-    "static/css/main.aba0775a.chunk.css.map": "/video-app/static/css/main.aba0775a.chunk.css.map",
-    "static/js/2.50b638de.chunk.js.LICENSE.txt": "/video-app/static/js/2.50b638de.chunk.js.LICENSE.txt",
+    "static/css/main.85ce7a0d.chunk.css.map": "/video-app/static/css/main.85ce7a0d.chunk.css.map",
+    "static/js/2.afdf2910.chunk.js.LICENSE.txt": "/video-app/static/js/2.afdf2910.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/video-app/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/video.mp4": "/video-app/static/media/video.0b2a9ffd.mp4",
     "static/media/voiceEmotion.png": "/video-app/static/media/voiceEmotion.46aa9097.png",
     "static/media/wpm.jpg": "/video-app/static/media/wpm.b627392d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.66cf5e2a.js",
     "static/css/2.ab06fbdc.chunk.css",
-    "static/js/2.50b638de.chunk.js",
-    "static/css/main.aba0775a.chunk.css",
-    "static/js/main.2a74b97a.chunk.js"
+    "static/js/2.afdf2910.chunk.js",
+    "static/css/main.85ce7a0d.chunk.css",
+    "static/js/main.d1f6c0d1.chunk.js"
   ]
 }
