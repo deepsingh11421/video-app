@@ -20,9 +20,6 @@ class Transcript extends Component {
     AddSpan = (content) => {
         var targetData = new RegExp(this.state.search, "g");
         var subsData = `<span>${this.state.search}</span>`;
-        console.log(targetData);
-        console.log(subsData);
-        console.log(content);
         return content.replace(targetData,subsData);
     }
 

@@ -4,6 +4,7 @@ import Detailed from './container/detailed/detailed';
 import {Route,withRouter,Switch} from 'react-router-dom';
 import VideoFrame from './component/videoFrame/videoFrame';
 import classes from './App.module.css';
+import vidFile from '../src/assets/video.mp4';
 import Navigation from './component/navigation/navigation';
 
 
@@ -55,10 +56,12 @@ class App extends Component {
     return (
       <div className={classes.app}>
         <VideoFrame
-          video_url="https://thinkific-import.s3.amazonaws.com/244040/0lwDEoNOQ6qYA41x3TK6_output8.m4v"
+          video_url={vidFile}
           video_name="video_name"
           video_upload_time="video_upload_time"
           safe="true"
+          start={0}
+          end={15}
         />
         <Navigation />
         <Switch>
