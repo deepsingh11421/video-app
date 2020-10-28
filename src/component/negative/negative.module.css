@@ -18,13 +18,13 @@
     width: 125px;
 }
 
-.contentButton:hover ~ .sideMenu {
+/* .contentButton:hover ~ .sideMenu {
     display: flex;
 }
 
 .sideMenu:hover {
     display: flex;
-}
+} */
 
 .sideMenu {
     border: 1px solid lightgrey;
