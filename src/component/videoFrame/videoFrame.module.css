@@ -7,6 +7,39 @@
     max-height: 500px;
 }
 
+.controls {
+    width: 95%;
+    margin: auto;
+}
+
+.controlList {
+    display: flex;
+}
+
+.controlDuration {
+    margin: 10px 5px 0px 5px;
+}
+
+.controlPlay {
+    border-radius: 50%;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    font-size: 0.7rem;
+}
+
+.controlPlay:focus {
+    outline: none;
+}
+
+.controlPlay:hover {
+    background-color: rgba(84,110,122,0.2);
+}
+
 .videoDetails {
     margin: 0px 10px;
     font-size: 1.3rem;
@@ -38,6 +71,44 @@
 
 hr {
     background-color: rgb(228, 142, 228);
+}
+
+.progressBar {
+    width: 100%;
+    cursor: pointer;
+    margin: auto;
+    background-color: rgba(255,0,0,0.2);
+    height: 5px;
+    border-radius: 5px;
+}
+
+.progress {
+    width: 0%;
+    background-color: red;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.dotPosition {
+    position: absolute;
+    top: -40%;
+    right: -5px;
+}
+
+.progressDot {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.progressBar:hover .progressDot{
+    opacity: 1;
 }
 
 @media (max-width: 450px){
