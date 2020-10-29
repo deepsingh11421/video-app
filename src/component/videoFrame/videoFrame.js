@@ -111,7 +111,7 @@ class VideoFrame extends Component {
 
         return (
             <div className={classes.videoContainer}>
-                <video onTimeUpdate={updatedAlert} id="videoTag" className={classes.videoFrame}>
+                <video onTimeUpdate={updatedAlert} id="videoTag" onClick={vidPlay} className={classes.videoFrame}>
                     <source src={this.props.video_url} type="video/mp4" />
                     Your browser does not support HTML video.
                 </video>
