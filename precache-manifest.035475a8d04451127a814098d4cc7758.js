@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ebb9cd22302f535f8e334f133d59583",
+    "revision": "9b148f9e723bf730e30b0ac5d7922e94",
     "url": "/video-app/index.html"
   },
   {
-    "revision": "a1cd3d5d39e268318884",
+    "revision": "47b2242149acba0c0ba7",
     "url": "/video-app/static/css/2.ab06fbdc.chunk.css"
   },
   {
-    "revision": "8a7a103688729368a82c",
-    "url": "/video-app/static/css/main.85ce7a0d.chunk.css"
+    "revision": "6e998504932292f092ac",
+    "url": "/video-app/static/css/main.a0315339.chunk.css"
   },
   {
-    "revision": "a1cd3d5d39e268318884",
-    "url": "/video-app/static/js/2.afdf2910.chunk.js"
+    "revision": "47b2242149acba0c0ba7",
+    "url": "/video-app/static/js/2.a31288b3.chunk.js"
   },
   {
     "revision": "362e17569680abbd0d123e8ec2b4b625",
-    "url": "/video-app/static/js/2.afdf2910.chunk.js.LICENSE.txt"
+    "url": "/video-app/static/js/2.a31288b3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8a7a103688729368a82c",
-    "url": "/video-app/static/js/main.d1f6c0d1.chunk.js"
+    "revision": "6e998504932292f092ac",
+    "url": "/video-app/static/js/main.60947afd.chunk.js"
   },
   {
     "revision": "a87ea7a24df6f70bd723",
