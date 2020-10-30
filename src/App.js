@@ -9,7 +9,7 @@ import Navigation from './component/navigation/navigation';
 
 
 class App extends Component {
-  
+
   render() {
     var keywordCloud = [
           ["germany", 1],
@@ -65,17 +65,22 @@ class App extends Component {
         />
         <Navigation />
         <Switch>
-          <Route 
+          <Route
             path="/detailed"
-            component={() => <Detailed persons={person}/>}
+            component={() => <Detailed persons={person} />}
           />
           <Route
             path="/"
             exact
-            component={() => <Summary keywordCloud={keywordCloud} persons={person} transcript={transcript}/>}
+            component={() => (
+              <Summary
+                keywordCloud={keywordCloud}
+                persons={person}
+                transcript={transcript}
+              />
+            )}
           />
         </Switch>
-       
       </div>
     );
   }

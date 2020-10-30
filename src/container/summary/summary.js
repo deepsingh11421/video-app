@@ -8,7 +8,9 @@ import Transcript from '../transcript/transcript';
 import LineGraph from '../../component/LineGraph/LineGraph'
 
 class Summary extends Component {
-    render(){
+  render() {
+
+
         return (
           <div className={classes.summary}>
             <VideoModule />

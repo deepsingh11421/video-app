@@ -12,7 +12,7 @@ function tableOfContent (props) {
 
     return (
         <div className={classes.tableOfContent}>
-            TABLE OF CONTENT<br />
+            TABLE OF CONTENT<br/>
             <div className={classes.content}>
                 <div className={classes.contentButton}>
                     <Button type="purple">Topic 1</Button>

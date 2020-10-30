@@ -50,7 +50,7 @@ class videoModule extends Component {
                         Code Copied!
                     </div>
                 </div>
-                
+
                 <div className={classes.function}>
                     <TableOfContent alertTrigger={this.alertTrigger}/>
                     <Positive alertTrigger={this.alertTrigger}/>
