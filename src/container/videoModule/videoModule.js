@@ -44,21 +44,31 @@ class videoModule extends Component {
         alert = alert.join(' ');
 
         return (
-            <div className={classes.videoModule}>
-                <div className={alert}>
-                    <div className={classes.alertText}>
-                        Code Copied!
-                    </div>
-                </div>
-
-                <div className={classes.function}>
-                    <TableOfContent alertTrigger={this.alertTrigger} topicChanger={this.props.topicChanger}/>
-                    <Positive alertTrigger={this.alertTrigger}/>
-                    <Negative alertTrigger={this.alertTrigger}/>
-                    <Voice alertTrigger={this.alertTrigger}/>
-                    <Custom />
-                </div>
+          <div className={classes.videoModule}>
+            <div className={alert}>
+              <div className={classes.alertText}>Code Copied!</div>
             </div>
+
+            <div className={classes.function}>
+              <TableOfContent
+                alertTrigger={this.alertTrigger}
+                topicChanger={this.props.topicChanger}
+              />
+              <Positive
+                alertTrigger={this.alertTrigger}
+                topicChanger={this.props.topicChanger}
+              />
+              <Negative
+                topicChanger={this.props.topicChanger}
+                alertTrigger={this.alertTrigger}
+              />
+              <Voice
+                topicChanger={this.props.topicChanger}
+                alertTrigger={this.alertTrigger}
+              />
+              <Custom topicChanger={this.props.topicChanger} />
+            </div>
+          </div>
         );
     }
 }

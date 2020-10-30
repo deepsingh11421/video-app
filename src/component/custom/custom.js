@@ -4,10 +4,10 @@ import classes from './custom.module.css';
 
 function custom (props) {
     return (
-        <div className={classes.custom}>
-            CUSTOM <br/>
-            <Button type="black">Tie</Button>
-        </div>
+      <div className={classes.custom} onClick={() => props.topicChanger(12)}>
+        CUSTOM <br />
+        <Button type="black">Tie</Button>
+      </div>
     );
 }
 

@@ -11,48 +11,56 @@ function voice (props) {
     }
 
     return (
-        <div className={classes.voice}>
-            VOICE <br/>
-            <div className={classes.content}>
-                <div className={classes.contentButton}>
-                    <Button type="black">Gratitude:1</Button>
-                </div>
-                <div className={classes.sideMenu}>
-                    <div onClick={() => copyCode(1)}>
-                        <FontAwesomeIcon icon={ faFileCode }/>
-                    </div>
-                    <div>
-                        <FontAwesomeIcon icon={ faShareAlt }/>
-                    </div>
-                </div>
+      <div className={classes.voice}>
+        VOICE <br />
+        <div className={classes.content}>
+          <div
+            className={classes.contentButton}
+            onClick={() => props.topicChanger(3)}
+          >
+            <Button type="black">Gratitude:1</Button>
+          </div>
+          <div className={classes.sideMenu}>
+            <div onClick={() => copyCode(1)}>
+              <FontAwesomeIcon icon={faFileCode} />
             </div>
-            <div className={classes.content}>
-                <div className={classes.contentButton}>
-                    <Button type="black">Question:1</Button>
-                </div>
-                <div className={classes.sideMenu}>
-                    <div onClick={() => copyCode(1)}>
-                        <FontAwesomeIcon icon={ faFileCode }/>
-                    </div>
-                    <div>
-                        <FontAwesomeIcon icon={ faShareAlt }/>
-                    </div>
-                </div>
+            <div>
+              <FontAwesomeIcon icon={faShareAlt} />
             </div>
-            <div className={classes.content}>
-                <div className={classes.contentButton}>
-                    <Button type="black">Question:2</Button>
-                </div>
-                <div className={classes.sideMenu}>
-                    <div onClick={() => copyCode(1)}>
-                        <FontAwesomeIcon icon={ faFileCode }/>
-                    </div>
-                    <div>
-                        <FontAwesomeIcon icon={ faShareAlt }/>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div className={classes.content}>
+          <div
+            className={classes.contentButton}
+            onClick={() => props.topicChanger(7)}
+          >
+            <Button type="black">Question:1</Button>
+          </div>
+          <div className={classes.sideMenu}>
+            <div onClick={() => copyCode(1)}>
+              <FontAwesomeIcon icon={faFileCode} />
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faShareAlt} />
+            </div>
+          </div>
+        </div>
+        <div className={classes.content}>
+          <div className={classes.contentButton} onClick={() => props.topicChanger(10)}>
+            <Button type="black">
+              Question:2
+            </Button>
+          </div>
+          <div className={classes.sideMenu}>
+            <div onClick={() => copyCode(1)}>
+              <FontAwesomeIcon icon={faFileCode} />
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faShareAlt} />
+            </div>
+          </div>
+        </div>
+      </div>
     );
 }
 
