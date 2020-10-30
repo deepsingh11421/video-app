@@ -10,6 +10,12 @@ import Navigation from './component/navigation/navigation';
 
 class App extends Component {
 
+  topicHandler = (time) => {
+    var tag = document.getElementById('videoTag');
+    // console.log('Clicked for time: '+time);
+    tag.currentTime = time;
+  }
+
   render() {
     var keywordCloud = [
           ["germany", 1],
@@ -67,7 +73,7 @@ class App extends Component {
         <Switch>
           <Route
             path="/detailed"
-            component={() => <Detailed persons={person} />}
+            component={() => <Detailed persons={person}/>}
           />
           <Route
             path="/"
@@ -77,6 +83,7 @@ class App extends Component {
                 keywordCloud={keywordCloud}
                 persons={person}
                 transcript={transcript}
+                topicChanger={this.topicHandler}
               />
             )}
           />

@@ -13,7 +13,7 @@ class Summary extends Component {
 
         return (
           <div className={classes.summary}>
-            <VideoModule />
+            <VideoModule topicChanger={this.props.topicChanger}/>
             <div className={classes.people}>
               <Heading>People</Heading>
               <People persons={this.props.persons} />

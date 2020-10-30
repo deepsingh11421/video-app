@@ -14,7 +14,7 @@ function tableOfContent (props) {
         <div className={classes.tableOfContent}>
             TABLE OF CONTENT<br/>
             <div className={classes.content}>
-                <div className={classes.contentButton}>
+                <div className={classes.contentButton} onClick={() => props.topicChanger(3)}>
                     <Button type="purple">Topic 1</Button>
                 </div>
                 <div className={classes.sideMenu}>
@@ -27,7 +27,7 @@ function tableOfContent (props) {
                 </div>
             </div>
             <div className={classes.content}>
-                <div className={classes.contentButton}>
+                <div className={classes.contentButton} onClick={() => props.topicChanger(6)}>
                     <Button type="purple">Topic 2</Button>
                 </div>
                 <div className={classes.sideMenu}>
@@ -40,7 +40,7 @@ function tableOfContent (props) {
                 </div>
             </div>
             <div className={classes.content}>
-                <div className={classes.contentButton}>
+                <div className={classes.contentButton} onClick={() => props.topicChanger(9)}>
                     <Button type="purple">Topic 3</Button>
                 </div>
                 <div className={classes.sideMenu}>
@@ -53,7 +53,7 @@ function tableOfContent (props) {
                 </div>
             </div>
             <div className={classes.content}>
-                <div className={classes.contentButton}>
+                <div className={classes.contentButton} onClick={() => props.topicChanger(12)}>
                     <Button type="purple">Topic 4</Button>
                 </div>
                 <div className={classes.sideMenu}>

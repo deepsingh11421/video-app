@@ -36,7 +36,6 @@ class VideoFrame extends Component {
             currTime: startTime,
             endTime: endTime
         }
-        console.log(startTime , ' ' , endTime)
     }
 
     componentDidMount(){
@@ -98,10 +97,6 @@ class VideoFrame extends Component {
             var progressPercent = clickDist/length*100;
             var skipTime = progressPercent*total/100;
             tag.currentTime = this.props.start + skipTime;
-            // var hours = Math.floor(time / 3600);
-            // var minutes = Math.floor((time % 3600) / 60);
-            // var seconds = time % 60;
-            // console.log(hours+' '+minutes+' '+seconds);
         }
 
         var playBtn = <button onClick={vidPlay} className={classes.controlPlay}><FontAwesomeIcon icon={ faPause }/></button>;

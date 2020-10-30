@@ -52,7 +52,7 @@ class videoModule extends Component {
                 </div>
 
                 <div className={classes.function}>
-                    <TableOfContent alertTrigger={this.alertTrigger}/>
+                    <TableOfContent alertTrigger={this.alertTrigger} topicChanger={this.props.topicChanger}/>
                     <Positive alertTrigger={this.alertTrigger}/>
                     <Negative alertTrigger={this.alertTrigger}/>
                     <Voice alertTrigger={this.alertTrigger}/>
