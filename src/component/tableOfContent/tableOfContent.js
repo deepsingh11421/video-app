@@ -7,10 +7,30 @@ import { withRouter } from 'react-router-dom';
 
 function tableOfContent (props) {
     const copyCode = (value) => {
-        console.log(value);
-        // 'http://deepsingh11421.github.io/video-app/share/0'
-        navigator.clipboard.writeText('http://localhost:3000/video-app/share/'+value);
+        // console.log(value);
+        // // 'http://deepsingh11421.github.io/video-app/share/0'
+        // navigator.clipboard.writeText('http://deepsingh11421.github.io/video-app/share/'+value);
+        // props.alertTrigger();
+        var textArea = document.createElement("textarea");
+        textArea.value = 'http://localhost:3000/video-app/share/'+value;
+        
+        // Avoid scrolling to bottom
+        textArea.style.top = "0";
+        textArea.style.left = "0";
+        textArea.style.position = "fixed";
+
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+
+        try {
+            var successful = document.execCommand('copy');
+            var msg = successful ? 'successful' : 'unsuccessful';
+        } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+        }
         props.alertTrigger();
+        document.body.removeChild(textArea);
     }
 
     return (
