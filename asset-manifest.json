@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/video-app/static/css/main.45da38fe.chunk.css",
-    "main.js": "/video-app/static/js/main.9023c9aa.chunk.js",
-    "main.js.map": "/video-app/static/js/main.9023c9aa.chunk.js.map",
+    "main.css": "/video-app/static/css/main.4e524b39.chunk.css",
+    "main.js": "/video-app/static/js/main.3a9b01c3.chunk.js",
+    "main.js.map": "/video-app/static/js/main.3a9b01c3.chunk.js.map",
     "runtime-main.js": "/video-app/static/js/runtime-main.66cf5e2a.js",
     "runtime-main.js.map": "/video-app/static/js/runtime-main.66cf5e2a.js.map",
     "static/css/2.ab06fbdc.chunk.css": "/video-app/static/css/2.ab06fbdc.chunk.css",
-    "static/js/2.a31288b3.chunk.js": "/video-app/static/js/2.a31288b3.chunk.js",
-    "static/js/2.a31288b3.chunk.js.map": "/video-app/static/js/2.a31288b3.chunk.js.map",
+    "static/js/2.c0a30862.chunk.js": "/video-app/static/js/2.c0a30862.chunk.js",
+    "static/js/2.c0a30862.chunk.js.map": "/video-app/static/js/2.c0a30862.chunk.js.map",
     "index.html": "/video-app/index.html",
-    "precache-manifest.cec15cac46455a5ff23d01b1b7bc315a.js": "/video-app/precache-manifest.cec15cac46455a5ff23d01b1b7bc315a.js",
+    "precache-manifest.9d5e215e8587c85360936d75e831a88c.js": "/video-app/precache-manifest.9d5e215e8587c85360936d75e831a88c.js",
     "service-worker.js": "/video-app/service-worker.js",
     "static/css/2.ab06fbdc.chunk.css.map": "/video-app/static/css/2.ab06fbdc.chunk.css.map",
-    "static/css/main.45da38fe.chunk.css.map": "/video-app/static/css/main.45da38fe.chunk.css.map",
-    "static/js/2.a31288b3.chunk.js.LICENSE.txt": "/video-app/static/js/2.a31288b3.chunk.js.LICENSE.txt",
+    "static/css/main.4e524b39.chunk.css.map": "/video-app/static/css/main.4e524b39.chunk.css.map",
+    "static/js/2.c0a30862.chunk.js.LICENSE.txt": "/video-app/static/js/2.c0a30862.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/video-app/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/video.mp4": "/video-app/static/media/video.0b2a9ffd.mp4",
     "static/media/voiceEmotion.png": "/video-app/static/media/voiceEmotion.46aa9097.png",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.66cf5e2a.js",
     "static/css/2.ab06fbdc.chunk.css",
-    "static/js/2.a31288b3.chunk.js",
-    "static/css/main.45da38fe.chunk.css",
-    "static/js/main.9023c9aa.chunk.js"
+    "static/js/2.c0a30862.chunk.js",
+    "static/css/main.4e524b39.chunk.css",
+    "static/js/main.3a9b01c3.chunk.js"
   ]
 }
