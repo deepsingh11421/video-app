@@ -12,7 +12,8 @@ function tableOfContent (props) {
         // navigator.clipboard.writeText('http://deepsingh11421.github.io/video-app/share/'+value);
         // props.alertTrigger();
         var textArea = document.createElement("textarea");
-        textArea.value = 'http://localhost:3000/video-app/share/'+value;
+        // textArea.value = 'http://localhost:3000/video-app/share/'+value;
+        textArea.value = 'http://deepsingh11421.github.io/video-app/share/'+value;
         
         // Avoid scrolling to bottom
         textArea.style.top = "0";
