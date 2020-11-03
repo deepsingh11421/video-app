@@ -21,6 +21,7 @@
 
 .show {
     top: 10px;
+    z-index: 100;
 }
 
 .alertText {

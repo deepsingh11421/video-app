@@ -2,12 +2,14 @@ import React, {Component} from 'react';
 import classes from './videoFrame.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay,faPause } from '@fortawesome/free-solid-svg-icons';
+import { withRouter } from 'react-router-dom';
 
 class VideoFrame extends Component {
     state = {}
 
     constructor(props){
         super(props);
+        
         var time = this.props.end - this.props.start;
         var hours = Math.floor(time / 3600);
         var minutes = Math.floor((time % 3600) / 60);
@@ -64,6 +66,7 @@ class VideoFrame extends Component {
             if(tag.currentTime > this.props.end || tag.currentTime < this.props.start){
                 tag.currentTime = this.props.start;
                 tag.pause();
+                this.setState({paused: true})
             }
             var curr = tag.currentTime - this.props.start;
             var total = this.props.end - this.props.start;
@@ -140,4 +143,4 @@ class VideoFrame extends Component {
     }
 }
 
-export default VideoFrame;
+export default withRouter(VideoFrame);

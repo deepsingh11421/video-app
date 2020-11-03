@@ -7,14 +7,14 @@ const navigation = (props) => {
         <div className={classes.navigation}>
             <NavLink 
                 exact
-                to="/"
+                to='/video-app/'
                 className={classes.nav}
                 activeClassName={classes.active}>
                 SUMMARY
             </NavLink>
             <NavLink 
                 exact
-                to="/detailed"
+                to="/video-app/detailed"
                 className={classes.nav}
                 activeClassName={classes.active}>
                 DETAILED

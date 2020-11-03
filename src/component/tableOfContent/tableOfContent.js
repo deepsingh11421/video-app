@@ -3,10 +3,13 @@ import classes from './tableOfContent.module.css';
 import Button from '../../UI/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileCode, faShareAlt } from '@fortawesome/free-solid-svg-icons';
+import { withRouter } from 'react-router-dom';
 
 function tableOfContent (props) {
     const copyCode = (value) => {
         console.log(value);
+        // 'http://deepsingh11421.github.io/video-app/share/0'
+        navigator.clipboard.writeText('http://localhost:3000/video-app/share/'+value);
         props.alertTrigger();
     }
 
@@ -18,7 +21,7 @@ function tableOfContent (props) {
                     <Button type="purple">Topic 1</Button>
                 </div>
                 <div className={classes.sideMenu}>
-                    <div onClick={() => copyCode(1)}>
+                    <div onClick={() => copyCode(0)}>
                         <FontAwesomeIcon icon={ faFileCode }/>
                     </div>
                     <div>
@@ -31,7 +34,7 @@ function tableOfContent (props) {
                     <Button type="purple">Topic 2</Button>
                 </div>
                 <div className={classes.sideMenu}>
-                    <div onClick={() => copyCode(2)}>
+                    <div onClick={() => copyCode(1)}>
                         <FontAwesomeIcon icon={ faFileCode }/>
                     </div>
                     <div>
@@ -57,7 +60,7 @@ function tableOfContent (props) {
                     <Button type="purple">Topic 4</Button>
                 </div>
                 <div className={classes.sideMenu}>
-                    <div onClick={() => copyCode(4)}>
+                    <div onClick={() => copyCode(3)}>
                         <FontAwesomeIcon icon={ faFileCode }/>
                     </div>
                     <div>
@@ -69,4 +72,4 @@ function tableOfContent (props) {
     );
 }
 
-export default tableOfContent;
+export default withRouter(tableOfContent);

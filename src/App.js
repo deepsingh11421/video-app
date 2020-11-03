@@ -6,13 +6,13 @@ import VideoFrame from './component/videoFrame/videoFrame';
 import classes from './App.module.css';
 import vidFile from '../src/assets/video.mp4';
 import Navigation from './component/navigation/navigation';
+import Shared from './container/shared/shared';
 
 
 class App extends Component {
 
   topicHandler = (time) => {
     var tag = document.getElementById('videoTag');
-    // console.log('Clicked for time: '+time);
     tag.currentTime = time;
   }
 
@@ -57,10 +57,25 @@ class App extends Component {
       ],
     ];
 
-    var transcript = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,";
+    var topic = [{
+        "btntext": "Topic 1",
+        "seektime": 0
+    }, {
+        "btntext": "Topic 2",
+        "seektime": 3
+    }, {
+        "btntext": "Topic 3",
+        "seektime": 6
+    }, {
+        "btntext": "Topic 4",
+        "seektime": 9
+    }];
 
-    return (
-      <div className={classes.app}>
+    var transcript = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,";
+    
+    var pathArray = window.location.pathname.split('/');
+    var videoContent = (
+      <div>
         <VideoFrame
           video_url={vidFile}
           video_name="video_name"
@@ -72,11 +87,11 @@ class App extends Component {
         <Navigation />
         <Switch>
           <Route
-            path="/detailed"
+            path="/video-app/detailed"
             component={() => <Detailed persons={person}/>}
           />
           <Route
-            path="/"
+            path="/video-app/"
             exact
             component={() => (
               <Summary
@@ -88,6 +103,24 @@ class App extends Component {
             )}
           />
         </Switch>
+      </div>
+    )
+    if(pathArray[2] === 'share'){
+      videoContent = (
+        <div>
+          <Switch>
+            <Route 
+              path='/video-app/share/:topic'
+              component={() => <Shared topic={topic} video_url={vidFile} start={0} end={15}/>}
+            />
+          </Switch>
+        </div>
+      );
+    }
+  
+    return (
+      <div className={classes.app}>
+        {videoContent}
       </div>
     );
   }
