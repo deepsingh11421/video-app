@@ -35,7 +35,7 @@ class VideoFrame extends Component {
         }
         this.state = {
             paused: true,
-    Time: startTime,
+            currTime: startTime,
             endTime: endTime
         }
     }
