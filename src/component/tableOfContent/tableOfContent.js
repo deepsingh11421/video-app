@@ -24,8 +24,7 @@ function tableOfContent (props) {
         textArea.select();
 
         try {
-            var successful = document.execCommand('copy');
-            var msg = successful ? 'successful' : 'unsuccessful';
+            document.execCommand('copy');
         } catch (err) {
             console.error('Fallback: Oops, unable to copy', err);
         }
