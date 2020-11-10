@@ -7,6 +7,7 @@ import classes from './App.module.css';
 import vidFile from '../src/assets/video.mp4';
 import Navigation from './component/navigation/navigation';
 import Shared from './container/shared/shared';
+const jsonData = require('./assets/final_json_v2.json');
 
 
 class App extends Component {
@@ -17,19 +18,9 @@ class App extends Component {
   }
 
   render() {
-    var keywordCloud = [
-          ["germany", 1],
-          ["states", 1],
-          ["said", 1],
-          ["rosen", 1],
-          ["united", 1],
-          ["rate", 1],
-          ["used", 1],
-          ["family", 1],
-          ["nazi", 1],
-          ["last", 1]
-    ];
-    
+    var keywordCloud = jsonData.keywords;
+    var actionBtns = jsonData.Overlay[0].actionBtns;
+
     var person = [
       [
         "Person1",
@@ -71,7 +62,7 @@ class App extends Component {
         "seektime": 9
     }];
 
-    var transcript = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,";
+    var transcript = jsonData.video_transcript;
     
     var pathArray = window.location.pathname.split('/');
     var videoContent = (
@@ -99,6 +90,7 @@ class App extends Component {
                 persons={person}
                 transcript={transcript}
                 topicChanger={this.topicHandler}
+                actionBtns={actionBtns}
               />
             )}
           />

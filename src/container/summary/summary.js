@@ -10,10 +10,9 @@ import LineGraph from '../../component/LineGraph/LineGraph'
 class Summary extends Component {
   render() {
 
-
         return (
           <div className={classes.summary}>
-            <VideoModule topicChanger={this.props.topicChanger}/>
+            <VideoModule topicChanger={this.props.topicChanger} actionBtns={this.props.actionBtns}/>
             <div className={classes.people}>
               <Heading>People</Heading>
               <People persons={this.props.persons} />

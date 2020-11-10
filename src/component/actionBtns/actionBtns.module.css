@@ -1,8 +1,7 @@
-.voice {
+.positive {
     /* width: 20%; */
     text-align: center;
     margin: 20px 0px;
-    color: black;
     font-size: 1.2rem;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
@@ -35,9 +34,9 @@
     display: none;
     font-size: 1.5rem;
     justify-content: space-around;
-    order: 10;
+    z-index: 10;
     background-color: white;
-    right: -102px;
+    right: -103px;
     top: 0px;
 }
 

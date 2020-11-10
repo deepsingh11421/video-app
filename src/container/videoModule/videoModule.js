@@ -1,10 +1,7 @@
 import React , {Component} from 'react';
 import classes from './videoModule.module.css';
 import TableOfContent from '../../component/tableOfContent/tableOfContent';
-import Positive from '../../component/positive/positive';
-import Negative from '../../component/negative/negative';
-import Voice from '../../component/voice/voice';
-import Custom from '../../component/custom/custom';
+import ActionBtns from '../../component/actionBtns/actionBtns';
 
 class videoModule extends Component {
     state={
@@ -37,6 +34,16 @@ class videoModule extends Component {
     }
 
     render() {
+        var actionBtns = this.props.actionBtns.map((elem,index) => {
+          return (
+            <ActionBtns 
+              alertTrigger={this.alertTrigger}
+              topicChanger={this.props.topicChanger}
+              data={elem}
+              key={index}
+          />
+          )
+        });
         var alert = [classes.alert];
         if(this.state.copyAlert){
             alert.push(classes.show);
@@ -54,19 +61,7 @@ class videoModule extends Component {
                 alertTrigger={this.alertTrigger}
                 topicChanger={this.props.topicChanger}
               />
-              <Positive
-                alertTrigger={this.alertTrigger}
-                topicChanger={this.props.topicChanger}
-              />
-              <Negative
-                topicChanger={this.props.topicChanger}
-                alertTrigger={this.alertTrigger}
-              />
-              <Voice
-                topicChanger={this.props.topicChanger}
-                alertTrigger={this.alertTrigger}
-              />
-              <Custom topicChanger={this.props.topicChanger} />
+              {actionBtns}
             </div>
           </div>
         );

@@ -1,0 +1,385 @@
+{
+    "userinfo": {
+        "email": "test_shubham10@gmail.com",
+        "version": "04 Sep 2020 17:18:00"
+    },
+    "weightage": {
+        "bodylanguage": 8,
+        "voice": 8,
+        "facialexpression": 8,
+        "words": 8,
+        "custom_ruler": 0,
+        "confidence": 0
+    },
+    "persons": {
+        "0": {
+            "words": {
+                "grammer_score": 1.89,
+                "grammer_score_percentage": 94.57,
+                "filler_score": 1.78,
+                "filler_score_percentage": 89.13,
+                "foulwords_score": 2.0,
+                "foulwords_score_percentage": 100,
+                "sentiment_score": 1.5,
+                "sentiment_score_percentage": 75.0,
+                "most_frequent_words": [
+                    ["germany", 1],
+                    ["states", 1],
+                    ["said", 1],
+                    ["rosen", 1],
+                    ["united", 1],
+                    ["rate", 1],
+                    ["used", 1],
+                    ["family", 1],
+                    ["nazi", 1],
+                    ["last", 1]
+                ],
+                "Positive_Negative": {
+                    "positive": [
+                        ["Good", 1],
+                        ["Many", 1],
+                        ["More", 1],
+                        ["First", 1],
+                        ["Happy", 1],
+                        ["Pretty", 1],
+                        ["Really", 1],
+                        ["Beautiful", 1],
+                        ["Prominent", 1],
+                        ["Wonderful", 1]
+                    ],
+                    "negative": [
+                        ["Sorry", 1]
+                    ]
+                },
+                "sentiment_check": "somewhat positive",
+                "grammer_result": [{
+                    "rule": "EXTREME_ADJECTIVES",
+                    "text": "...aid but don\"t worry Mister Rosen I have really good news for you.I \"ve got a car that has a...",
+                    "message": "Consider using an extreme adjective for ‘good’.",
+                    "category": "STYLE",
+                    "suggestions": [{
+                        "value": "wonderful"
+                    }, {
+                        "value": "fantastic"
+                    }, {
+                        "value": "superb"
+                    }, {
+                        "value": "perfect"
+                    }, {
+                        "value": "excellent"
+                    }]
+                }],
+                "filler_words_list": [
+                    ["really", 1],
+                    ["very", 1]
+                ],
+                "foulwords": [0, []]
+            },
+            "voice": {
+                "wpm_score": 1.89,
+                "wpm_score_percentage": 94.37,
+                "pause": 1.49,
+                "pause_percentage": 74.3,
+                "energy_level": 1.0,
+                "energy_level_percentage": 50,
+                "quality": 1.32,
+                "quality_percentage": 66.17,
+                "emotion_voice": "angry",
+                "energy_level_voice": "low",
+                "mood_of_speech_voice": "Showing no emotion",
+                "number_of_pauses_voice": 85.0,
+                "number_of_syllables_voice": 463.0,
+                "rate_of_speech_voice": 2.67,
+                "word_per_minute": 160
+            },
+            "bodylanguage": {
+                "Gesture": 1.3,
+                "Gesture_percentage": 64.97,
+                "posture": 1.49,
+                "posture_percentage": 74.46,
+                "Moves": 0.89,
+                "Moves_percentage": 44.63,
+                "Stagegreet": 0,
+                "Stagegreet_percentage": 0
+            },
+            "hero_img": {
+                "hero_img": "https://princetonhive-ai-bucket.s3.amazonaws.com/Facial_Attribute/output/null09192020_090529hero_image.png"
+            },
+            "facialexpression": {
+                "Neutral": 0.49,
+                "Neutral_percentage": 36.94,
+                "Laugh": 0.68,
+                "Laugh_percentage": 51.35,
+                "Emotion": 0.52,
+                "Emotion_percentage": 39.34,
+                "Eyeblink": 0.74,
+                "Eyeblink_percentage": 55.86,
+                "Eyecontact": 1.11,
+                "Eyecontact_percentage": 82.88,
+                "Expressiveness": 0.44,
+                "Expressiveness_percentage": 33.33,
+                "clothing": {}
+            },
+            "raw": {
+                "bodylanguage": {
+                    "posture": "42 % Casual Pose & 0 % Formal Pose",
+                    "Gesture": "12 % Hand Movement",
+                    "Moves": "7 % Walk"
+                },
+                "facialexpression": {
+                    "Neutral": "Neutral expression in 97% of video",
+                    "Laugh": "Laugh/Smile in 14% of video",
+                    "Emotion": "Emotion change in 5% of video",
+                    "Eyeblink": "3 Eye Blink in a minute",
+                    "Eyecontact": "59% Eye Contact",
+                    "Expressiveness": "0% Eye Brow Movement"
+                },
+                "words": {
+                    "grammer_score": "1 errors",
+                    "filler_score": 2,
+                    "foulwords_score": "No bad words",
+                    "sentiment_score": "somewhat positive"
+                },
+                "voice": {
+                    "wpm_score": "160 words per minute",
+                    "pause": "28 pause per minute",
+                    "energy_level": "low",
+                    "quality": "Poor"
+                }
+            },
+            "totalscore": {
+                "bodylanguage": 3.68,
+                "facetotal": 3.98,
+                "Voicetotal": 5.7,
+                "Wordstotal": 7.17,
+                "bodylanguage_percent": 46.0,
+                "facetotal_percent": 49.75,
+                "Voicetotal_percent": 71.25,
+                "Wordstotal_percent": 89.625
+            },
+            "overall_score": {
+                "overall_score": 20.53
+            }
+        },
+        "1": {
+            "words": {
+                "grammer_score": 1.89,
+                "grammer_score_percentage": 94.57,
+                "filler_score": 1.78,
+                "filler_score_percentage": 89.13,
+                "foulwords_score": 2.0,
+                "foulwords_score_percentage": 100,
+                "sentiment_score": 1.5,
+                "sentiment_score_percentage": 75.0,
+                "most_frequent_words": [
+                    ["germany", 1],
+                    ["states", 1],
+                    ["said", 1],
+                    ["rosen", 1],
+                    ["united", 1],
+                    ["rate", 1],
+                    ["used", 1],
+                    ["family", 1],
+                    ["nazi", 1],
+                    ["last", 1]
+                ],
+                "Positive_Negative": {
+                    "positive": [
+                        ["Good", 1],
+                        ["Many", 1],
+                        ["More", 1],
+                        ["First", 1],
+                        ["Happy", 1],
+                        ["Pretty", 1],
+                        ["Really", 1],
+                        ["Beautiful", 1],
+                        ["Prominent", 1],
+                        ["Wonderful", 1]
+                    ],
+                    "negative": [
+                        ["Sorry", 1]
+                    ]
+                },
+                "sentiment_check": "somewhat positive",
+                "grammer_result": [{
+                    "rule": "EXTREME_ADJECTIVES",
+                    "text": "...aid but don\"t worry Mister Rosen I have really good news for you.I \"ve got a car that has a...",
+                    "message": "Consider using an extreme adjective for ‘good’.",
+                    "category": "STYLE",
+                    "suggestions": [{
+                        "value": "wonderful"
+                    }, {
+                        "value": "fantastic"
+                    }, {
+                        "value": "superb"
+                    }, {
+                        "value": "perfect"
+                    }, {
+                        "value": "excellent"
+                    }]
+                }],
+                "filler_words_list": [
+                    ["really", 1],
+                    ["very", 1]
+                ],
+                "foulwords": [0, []]
+            },
+            "voice": {
+                "wpm_score": 1.89,
+                "wpm_score_percentage": 94.37,
+                "pause": 1.49,
+                "pause_percentage": 74.3,
+                "energy_level": 1.0,
+                "energy_level_percentage": 50,
+                "quality": 1.32,
+                "quality_percentage": 66.17,
+                "emotion_voice": "angry",
+                "energy_level_voice": "low",
+                "mood_of_speech_voice": "Showing no emotion",
+                "number_of_pauses_voice": 85.0,
+                "number_of_syllables_voice": 463.0,
+                "rate_of_speech_voice": 2.67,
+                "word_per_minute": 160
+            },
+            "bodylanguage": {
+                "Gesture": 1.3,
+                "Gesture_percentage": 64.97,
+                "posture": 1.49,
+                "posture_percentage": 74.46,
+                "Moves": 0.89,
+                "Moves_percentage": 44.63,
+                "Stagegreet": 0,
+                "Stagegreet_percentage": 0
+            },
+            "hero_img": {
+                "hero_img": "https://princetonhive-ai-bucket.s3.amazonaws.com/Facial_Attribute/output/null09192020_090529hero_image.png"
+            },
+            "facialexpression": {
+                "Neutral": 0.49,
+                "Neutral_percentage": 36.94,
+                "Laugh": 0.68,
+                "Laugh_percentage": 51.35,
+                "Emotion": 0.52,
+                "Emotion_percentage": 39.34,
+                "Eyeblink": 0.74,
+                "Eyeblink_percentage": 55.86,
+                "Eyecontact": 1.11,
+                "Eyecontact_percentage": 82.88,
+                "Expressiveness": 0.44,
+                "Expressiveness_percentage": 33.33,
+                "clothing": {}
+            },
+            "raw": {
+                "bodylanguage": {
+                    "posture": "42 % Casual Pose & 0 % Formal Pose",
+                    "Gesture": "12 % Hand Movement",
+                    "Moves": "7 % Walk"
+                },
+                "facialexpression": {
+                    "Neutral": "Neutral expression in 97% of video",
+                    "Laugh": "Laugh/Smile in 14% of video",
+                    "Emotion": "Emotion change in 5% of video",
+                    "Eyeblink": "3 Eye Blink in a minute",
+                    "Eyecontact": "59% Eye Contact",
+                    "Expressiveness": "0% Eye Brow Movement"
+                },
+                "words": {
+                    "grammer_score": "1 errors",
+                    "filler_score": 2,
+                    "foulwords_score": "No bad words",
+                    "sentiment_score": "somewhat positive"
+                },
+                "voice": {
+                    "wpm_score": "160 words per minute",
+                    "pause": "28 pause per minute",
+                    "energy_level": "low",
+                    "quality": "Poor"
+                }
+            },
+            "totalscore": {
+                "bodylanguage": 3.68,
+                "facetotal": 3.98,
+                "Voicetotal": 5.7,
+                "Wordstotal": 7.17,
+                "bodylanguage_percent": 46.0,
+                "facetotal_percent": 49.75,
+                "Voicetotal_percent": 71.25,
+                "Wordstotal_percent": 89.625
+            },
+            "overall_score": {
+                "overall_score": 20.53
+            }
+        }
+    },
+    "Overlay": [{
+        "videoURL": "https://thinkific-import.s3.amazonaws.com/244040/0lwDEoNOQ6qYA41x3TK6_output8.m4v",
+        "videoWidth": null,
+        "actionBtns": [{
+            "actionType": "Positive",
+            "btnTheme": "Green",
+            "buttons": [{
+                "btntext": "hand move",
+                "seektime": 6
+            }]
+        }, {
+            "actionType": "Negative",
+            "btnTheme": "Red",
+            "buttons": [{
+                "btntext": "voice quality",
+                "seektime": 0
+            }, {
+                "btntext": "pause",
+                "seektime": 30
+            }, {
+                "btntext": "eyeblink",
+                "seektime": 3
+            }, {
+                "btntext": "neutral",
+                "seektime": 9
+            }]
+        }, {
+            "actionType": "Voice",
+            "btnTheme": "Black",
+            "buttons": [{
+                "btntext": "question: 1",
+                "seektime": 120
+            }, {
+                "btntext": "question: 2",
+                "seektime": 165
+            }, {
+                "btntext": "question: 3",
+                "seektime": 75
+            }]
+        }, {
+            "actionType": "Custom",
+            "btnTheme": "Black",
+            "buttons": [{
+                "btntext": "person",
+                "seektime": 2
+            }, {
+                "btntext": "chair",
+                "seektime": 2
+            }, {
+                "btntext": "sofa",
+                "seektime": 12
+            }, {
+                "btntext": "pottedplant",
+                "seektime": 12
+            }]
+        }, {
+            "actionType": "Insights",
+            "btnTheme": "Purple",
+            "buttons": [{
+                "btntext": "topic 1",
+                "seektime": 120
+            }, {
+                "btntext": "topic 2",
+                "seektime": 165
+            }, {
+                "btntext": "topic 3",
+                "seektime": 75
+            }]
+        }]
+    }],
+    "keywords": ["put", "better", "thing", "starting", "say", "india", "hesitation", "u", "towed", "tell", "teachers", "students", "student", "seen", "see", "professors", "professional", "process", "one", "method", "mean", "love", "list", "kind", "infrastructure", "find", "feel", "feed", "fact", "educating", "depends", "contradict", "competition", "believe", "approach"],
+    "video_transcript": "starting and ending university and it\"s also going abroad to do your blood graduation and tell me why do you feed the fortification system is better than being in love that depends on what you mean but if I was to put three things I would say the method on the process of educating the students because different entirely different from what I \"ve seen in India the other thing is that the approach of the teachers the professors it\"s far far more professional as I have seen in India in India and the towed in but important thing is infrastructure is far better thank you as she was to those three things combined given the fact that you don \"t find in and you feel that the Indian universities and colleges lack of one in the list of most of them right thanks to them  what do you have to say about that but I mean it\"s because you have to contradict that see I believe that there are certain inherent benefits off starting in India compared to the U.S.like starting with the kind of competition we see you the kind of streets this is a student is put through Overlake twelve years of "}
