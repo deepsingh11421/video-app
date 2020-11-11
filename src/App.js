@@ -18,33 +18,18 @@ class App extends Component {
   }
 
   render() {
-    var keywordCloud = jsonData.keywords;
+    var keywordCloud = jsonData.keywords.splice(0,20);
     var actionBtns = jsonData.Overlay[0].actionBtns;
-
     var person = [
       [
         "Person1",
         "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
+        "true"
       ],
       [
         "Person2",
         "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
-      ],
-      [
-        "Person3",
-        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
-      ],
-      [
-        "Person4",
-        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
-      ],
-      [
-        "Person5",
-        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
-      ],
-      [
-        "Person6",
-        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
+        "false"
       ],
     ];
 

@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
 import classes from './videoModule.module.css';
-import TableOfContent from '../../component/tableOfContent/tableOfContent';
+// import TableOfContent from '../../component/tableOfContent/tableOfContent';
 import ActionBtns from '../../component/actionBtns/actionBtns';
 
 class videoModule extends Component {
@@ -57,10 +57,10 @@ class videoModule extends Component {
             </div>
 
             <div className={classes.function}>
-              <TableOfContent
+              {/* <TableOfContent
                 alertTrigger={this.alertTrigger}
                 topicChanger={this.props.topicChanger}
-              />
+              /> */}
               {actionBtns}
             </div>
           </div>
