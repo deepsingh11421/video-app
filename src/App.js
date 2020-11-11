@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    var keywordCloud = jsonData.keywords.splice(0,20);
+    var keywordCloud = jsonData.keywords;
     var actionBtns = jsonData.Overlay[0].actionBtns;
     var person = [
       [
