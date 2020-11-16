@@ -9,16 +9,6 @@ class Detailed extends Component {
     constructor(props) {
         super(props);
 
-        for (let i = 0; i < this.props.persons.length;i++) {
-            if (i === 0) {
-            this.props.persons[i].push(true);
-            }
-            else {
-            this.props.persons[i].push(false);
-            }
-        }
-
-
         this.state = {
           active: 0,
         };

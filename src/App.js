@@ -12,6 +12,18 @@ const jsonData = require('./assets/final_json_v2.json');
 
 class App extends Component {
 
+  // constructor(props) {
+  //   super(props);
+
+  //    for (let i = 0; i < this.person.length; i++) {
+  //      if (i === 0) {
+  //        this.person[i].push(true);
+  //      } else {
+  //        this.person[i].push(false);
+  //      }
+  //    } 
+  // }
+
   topicHandler = (time) => {
     var tag = document.getElementById('videoTag');
     tag.currentTime = time;
@@ -20,17 +32,10 @@ class App extends Component {
   render() {
     var keywordCloud = jsonData.keywords;
     var actionBtns = jsonData.Overlay[0].actionBtns;
+   
     var person = [
-      [
-        "Person1",
-        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
-        "true"
-      ],
-      [
-        "Person2",
-        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
-        "false"
-      ],
+      ["Person1", jsonData.persons["0"]["hero_img"]["hero_img"]],
+      ["Person2", jsonData.persons["1"]["hero_img"]["hero_img"]],
     ];
 
     var topic = [{
