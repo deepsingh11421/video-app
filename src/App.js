@@ -12,18 +12,6 @@ const jsonData = require('./assets/final_json_v2.json');
 
 class App extends Component {
 
-  // constructor(props) {
-  //   super(props);
-
-  //    for (let i = 0; i < this.person.length; i++) {
-  //      if (i === 0) {
-  //        this.person[i].push(true);
-  //      } else {
-  //        this.person[i].push(false);
-  //      }
-  //    } 
-  // }
-
   topicHandler = (time) => {
     console.log(time);
     // var tag = document.getElementById('videoTag');
