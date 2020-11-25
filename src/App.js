@@ -12,6 +12,18 @@ const jsonData = require('./assets/final_json_v2.json');
 
 class App extends Component {
 
+  // constructor(props) {
+  //   super(props);
+
+  //    for (let i = 0; i < this.person.length; i++) {
+  //      if (i === 0) {
+  //        this.person[i].push(true);
+  //      } else {
+  //        this.person[i].push(false);
+  //      }
+  //    } 
+  // }
+
   topicHandler = (time) => {
     console.log(time);
     // var tag = document.getElementById('videoTag');
@@ -21,36 +33,37 @@ class App extends Component {
   render() {
     var keywordCloud = jsonData.keywords;
     var actionBtns = jsonData.Overlay[0].actionBtns;
-    var person = [
-      [
-        "Person1",
-        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
-        "true"
-      ],
-      [
-        "Person2",
-        "https://www.sina.pk/wp-content/uploads/2017/11/dummy-dp.png",
-        "false"
-      ],
+
+    var person = [];
+
+    let i = 1;
+    for (let key in jsonData.persons) {
+      // console.log(jsonData.persons[key]["hero_img"]["hero_img"]);
+      person.push(["person "+i++, jsonData.persons[key]["hero_img"]["hero_img"]]);
+    }
+
+    var topic = [
+      {
+        btntext: "Topic 1",
+        seektime: 0,
+      },
+      {
+        btntext: "Topic 2",
+        seektime: 3,
+      },
+      {
+        btntext: "Topic 3",
+        seektime: 6,
+      },
+      {
+        btntext: "Topic 4",
+        seektime: 9,
+      },
     ];
 
-    var topic = [{
-        "btntext": "Topic 1",
-        "seektime": 0
-    }, {
-        "btntext": "Topic 2",
-        "seektime": 3
-    }, {
-        "btntext": "Topic 3",
-        "seektime": 6
-    }, {
-        "btntext": "Topic 4",
-        "seektime": 9
-    }];
-
     var transcript = jsonData.video_transcript;
-    
-    var pathArray = window.location.pathname.split('/');
+
+    var pathArray = window.location.pathname.split("/");
     var videoContent = (
       <div>
         <VideoFrame
@@ -65,7 +78,7 @@ class App extends Component {
         <Switch>
           <Route
             path="/video-app/detailed"
-            component={() => <Detailed persons={person}/>}
+            component={() => <Detailed persons={person} />}
           />
           <Route
             path="/video-app/"
@@ -82,25 +95,23 @@ class App extends Component {
           />
         </Switch>
       </div>
-    )
-    if(pathArray[2] === 'share'){
+    );
+    if (pathArray[2] === "share") {
       videoContent = (
         <div>
           <Switch>
-            <Route 
-              path='/video-app/share/:topic'
-              component={() => <Shared topic={topic} video_url={vidFile} start={0} end={15}/>}
+            <Route
+              path="/video-app/share/:topic"
+              component={() => (
+                <Shared topic={topic} video_url={vidFile} start={0} end={15} />
+              )}
             />
           </Switch>
         </div>
       );
     }
-  
-    return (
-      <div className={classes.app}>
-        {videoContent}
-      </div>
-    );
+
+    return <div className={classes.app}>{videoContent}</div>;
   }
 }
 

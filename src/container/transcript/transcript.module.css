@@ -19,10 +19,13 @@
 }
 
 .text {
-    color: blue;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color:rgb(0, 96, 137);
+    font-family: sans-serif;
 }
 
 .text span {
-    background-color: yellow;
+    /* color: white; */
+    background-color:rgb(251, 255, 0);
 }
