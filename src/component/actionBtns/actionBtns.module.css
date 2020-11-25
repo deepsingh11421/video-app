@@ -7,6 +7,16 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.tableOfContent {
+    /* width: 20%; */
+    text-align: center;
+    margin: 20px 0px;
+    color: purple;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .content {
     position: relative;
 }
@@ -17,13 +27,13 @@
     width: 125px;
 }
 
-/* .contentButton:hover ~ .sideMenu {
+.contentButton:hover ~ .sideMenu {
     display: flex;
 }
 
 .sideMenu:hover {
     display: flex;
-} */
+}
 
 .sideMenu {
     border: 1px solid lightgrey;
