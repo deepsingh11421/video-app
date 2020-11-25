@@ -32,29 +32,37 @@ class App extends Component {
   render() {
     var keywordCloud = jsonData.keywords;
     var actionBtns = jsonData.Overlay[0].actionBtns;
-   
-    var person = [
-      ["Person1", jsonData.persons["0"]["hero_img"]["hero_img"]],
-      ["Person2", jsonData.persons["1"]["hero_img"]["hero_img"]],
+
+    var person = [];
+
+    let i = 1;
+    for (let key in jsonData.persons) {
+      // console.log(jsonData.persons[key]["hero_img"]["hero_img"]);
+      person.push(["person "+i++, jsonData.persons[key]["hero_img"]["hero_img"]]);
+    }
+
+    var topic = [
+      {
+        btntext: "Topic 1",
+        seektime: 0,
+      },
+      {
+        btntext: "Topic 2",
+        seektime: 3,
+      },
+      {
+        btntext: "Topic 3",
+        seektime: 6,
+      },
+      {
+        btntext: "Topic 4",
+        seektime: 9,
+      },
     ];
 
-    var topic = [{
-        "btntext": "Topic 1",
-        "seektime": 0
-    }, {
-        "btntext": "Topic 2",
-        "seektime": 3
-    }, {
-        "btntext": "Topic 3",
-        "seektime": 6
-    }, {
-        "btntext": "Topic 4",
-        "seektime": 9
-    }];
-
     var transcript = jsonData.video_transcript;
-    
-    var pathArray = window.location.pathname.split('/');
+
+    var pathArray = window.location.pathname.split("/");
     var videoContent = (
       <div>
         <VideoFrame
@@ -69,7 +77,7 @@ class App extends Component {
         <Switch>
           <Route
             path="/video-app/detailed"
-            component={() => <Detailed persons={person}/>}
+            component={() => <Detailed persons={person} />}
           />
           <Route
             path="/video-app/"
@@ -86,25 +94,23 @@ class App extends Component {
           />
         </Switch>
       </div>
-    )
-    if(pathArray[2] === 'share'){
+    );
+    if (pathArray[2] === "share") {
       videoContent = (
         <div>
           <Switch>
-            <Route 
-              path='/video-app/share/:topic'
-              component={() => <Shared topic={topic} video_url={vidFile} start={0} end={15}/>}
+            <Route
+              path="/video-app/share/:topic"
+              component={() => (
+                <Shared topic={topic} video_url={vidFile} start={0} end={15} />
+              )}
             />
           </Switch>
         </div>
       );
     }
-  
-    return (
-      <div className={classes.app}>
-        {videoContent}
-      </div>
-    );
+
+    return <div className={classes.app}>{videoContent}</div>;
   }
 }
 

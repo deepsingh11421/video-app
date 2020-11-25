@@ -125,7 +125,7 @@
                     "posture": "42 % Casual Pose & 0 % Formal Pose",
                     "Gesture": "12 % Hand Movement",
                     "Moves": "7 % Walk"
-                },
+               },
                 "facialexpression": {
                     "Neutral": "Neutral expression in 97% of video",
                     "Laugh": "Laugh/Smile in 14% of video",
