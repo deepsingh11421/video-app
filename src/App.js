@@ -13,8 +13,9 @@ const jsonData = require('./assets/final_json_v2.json');
 class App extends Component {
 
   topicHandler = (time) => {
-    var tag = document.getElementById('videoTag');
-    tag.currentTime = time;
+    console.log(time);
+    // var tag = document.getElementById('videoTag');
+    // tag.currentTime = time;
   }
 
   render() {
