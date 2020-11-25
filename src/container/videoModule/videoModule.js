@@ -47,7 +47,8 @@ class videoModule extends Component {
         var alert = [classes.alert];
         if(this.state.copyAlert){
             alert.push(classes.show);
-        }
+      }
+      
         alert = alert.join(' ');
 
         return (

@@ -60,13 +60,15 @@ class App extends Component {
       },
     ];
 
+    console.log(jsonData.Overlay[0]["videoURL"]);
+
     var transcript = jsonData.video_transcript;
 
     var pathArray = window.location.pathname.split("/");
     var videoContent = (
       <div>
         <VideoFrame
-          video_url={vidFile}
+          video_url={jsonData.Overlay[0]["videoURL"]}
           video_name="video_name"
           video_upload_time="video_upload_time"
           safe="true"
