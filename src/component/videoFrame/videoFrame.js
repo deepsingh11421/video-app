@@ -34,10 +34,44 @@ class VideoFrame extends Component {
             startTime = '0:00';
         }
         this.state = {
+            start: this.props.start,
+            end: this.props.end,
             paused: true,
             currTime: startTime,
             endTime: endTime
         }
+    }
+
+    updateTime(){
+        var time = this.props.end - this.props.start;
+        var hours = Math.floor(time / 3600);
+        var minutes = Math.floor((time % 3600) / 60);
+        var seconds = time % 60;
+        if(seconds < 10){
+            seconds = '0'+seconds;
+        }
+        var endTime;
+        var startTime;
+        if(hours>0){
+            if(hours<10){
+                hours = '0'+hours;
+                
+            }
+            if(minutes < 10){
+                minutes = '0'+minutes;
+            }
+            endTime = hours+':'+minutes+':'+seconds;
+            startTime = '0:00:00';
+        }else{
+            endTime = minutes+':'+seconds;
+            startTime = '0:00';
+        }
+        this.setState({
+            paused: true,
+            end: this.props.end,
+            currTime: startTime,
+            endTime: endTime
+        });
     }
 
     componentDidMount(){
@@ -46,6 +80,9 @@ class VideoFrame extends Component {
     }
 
     render(){
+        if(this.props.end !== this.state.end){
+            this.updateTime();
+        }
         var safe = <button className={classes.safe}>SAFE</button>
         if(this.props.safe !== 'true'){
             safe = <button className={classes.danger}>NOT SAFE</button>
@@ -109,7 +146,7 @@ class VideoFrame extends Component {
 
         return (
             <div className={classes.videoContainer}>
-                <video onTimeUpdate={updatedAlert} id="videoTag" onClick={vidPlay} className={classes.videoFrame}>
+                <video preload="metadata" onTimeUpdate={updatedAlert} id="videoTag" onClick={vidPlay} className={classes.videoFrame}>
                     <source src={this.props.video_url} type="video/mp4" />
                     Your browser does not support HTML video.
                 </video>

@@ -6,14 +6,8 @@ import { faFileCode, faShareAlt } from '@fortawesome/free-solid-svg-icons';
 
 function actionBtns (props) {
     const copyCode = (value) => {
-        // console.log(value);
-        // // 'http://deepsingh11421.github.io/video-app/share/0'
-        // navigator.clipboard.writeText('http://deepsingh11421.github.io/video-app/share/'+value);
-        // props.alertTrigger();
         var textArea = document.createElement("textarea");
         textArea.value = 'http://localhost:3000/video-app/share/'+value;
-        
-        // Avoid scrolling to bottom
         textArea.style.top = "0";
         textArea.style.left = "0";
         textArea.style.position = "fixed";
@@ -45,7 +39,7 @@ function actionBtns (props) {
                         <Button type={props.data.btnTheme}>{elem.btntext}</Button>
                     </div>
                     <div className={classes.sideMenu}>
-                        <div onClick={() => copyCode(1)}>
+                        <div onClick={() => copyCode(index+1)}>
                         <FontAwesomeIcon icon={faFileCode} />
                         </div>
                         <div>

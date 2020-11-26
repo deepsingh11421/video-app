@@ -11,11 +11,23 @@ const jsonData = require('./assets/final_json_v2.json');
 
 
 class App extends Component {
+  state = {
+    start: 0,
+    end: 0
+  }
 
   topicHandler = (time) => {
-    console.log(time);
-    // var tag = document.getElementById('videoTag');
-    // tag.currentTime = time;
+    var tag = document.getElementById('videoTag');
+    tag.currentTime = time;
+  }
+
+  componentDidMount(){
+    var tag = document.getElementById('videoTag');
+    var duration;
+    tag.onloadedmetadata = function(){
+      duration = Math.floor(tag.duration);
+      this.setState({end: duration});
+    }.bind(this);
   }
 
   render() {
@@ -26,7 +38,6 @@ class App extends Component {
 
     let i = 1;
     for (let key in jsonData.persons) {
-      // console.log(jsonData.persons[key]["hero_img"]["hero_img"]);
       person.push(["person "+i++, jsonData.persons[key]["hero_img"]["hero_img"]]);
     }
 
@@ -61,8 +72,8 @@ class App extends Component {
           video_name="video_name"
           video_upload_time="video_upload_time"
           safe="true"
-          start={0}
-          end={15}
+          start={this.state.start}
+          end={this.state.end}
         />
         <Navigation />
         <Switch>
